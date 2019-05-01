@@ -9,7 +9,7 @@ const Post = (props) => {
       <img src='https://cdn.onlinewebfonts.com/svg/img_510068.png' />
      { props.message }
           <div>
-        <span>like</span>
+        <span>likes</span>
       </div>
     </div>
   )
