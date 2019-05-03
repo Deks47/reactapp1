@@ -12,9 +12,10 @@ const App = (props) => {
         <div className='app-wrapper'>
             <Header/>
             <Navbar/>
-            {/*<Profile />*/}
+
             <div class='app-wrapper-content'>
                 <Dialogs />
+                {/*<Profile />*/}
             </div>
 
 
