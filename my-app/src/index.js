@@ -8,7 +8,7 @@ import {addPost} from "./redux/state";
 import { BrowserRouter } from "react-router-dom";
 
 
-
+.....
 ReactDOM.render(
 
     <App state={state} addPost={addPost} />,
