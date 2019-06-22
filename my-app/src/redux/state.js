@@ -31,7 +31,7 @@ let store = {
     getState() {
         return this._state;
     },
-    rerenderEntireTree() {
+    _callSubscriber() {
         console.log('changed state');
     },
     addPost() {
@@ -42,21 +42,16 @@ let store = {
         };
         this._state.profilePage.posts.push(newPost);
         this._state.profilePage.posts.newPostText = '';
-        this._rerenderEntireTree(this._state);
+        this.__callSubscriber(this._state);
     },
     updateNewPostText(newText) {
         this._state.profilePage.newPostText = newText;
-        this._rerenderEntireTree(this._state);
+        this.__callSubscriber(this._state);
     },
     subscribe(observer) {
-        this._rerenderEntireTree = observer;
+        this.__callSubscriber = observer;
     },
 }
-
-
-
-
-
 
 
 
